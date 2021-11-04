@@ -14,6 +14,7 @@ import Services from "../container/Services";
 
 export default function AppMaster() {
   return (
+    // <Switch> is similar to a JavaScript switch statement. It will conditionally render the <Route> that matches the <Link> path.
     <Router>
         <Switch>
           <Route exact path="/" component={Home}/>
@@ -23,6 +24,6 @@ export default function AppMaster() {
           <Route path="/profile/:id" component={Profile}/>
           <Route path="*" component={Error}/>
           </Switch>
-    </Router>
+    </Router> 
   );
 }
